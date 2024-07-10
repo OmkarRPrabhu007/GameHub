@@ -30,3 +30,25 @@ Connect 4 is a classic two-player game implemented in C++. The objective of the 
 - **Move Calculation**: The `best_move` function uses a minimax algorithm to evaluate the game tree and choose the best move.
 - **Game Loop**: The main function (`main`) controls the game flow, alternating turns between players until one player wins or the game ends in a draw.
 - **Customizable Start**: Players can choose to start first or second, and they can select their character ('R' for red or 'B' for blue) at the beginning of the game.
+
+--- 
+## Tic-Tac-Toe Game
+
+The Tic-Tac-Toe game is a classic two-player game implemented in C++. Players take turns placing their respective marks ('X' or 'O') on a 4x4 grid. The objective is to be the first to form a horizontal, vertical, or diagonal line of your mark.
+
+### Features
+
+- **Board Representation**: The board is represented using a 2D character array, where each element represents a cell on the board. An empty cell is represented by `'.'`.
+  
+- **Board Visualization**: The `printBoard` function displays the current state of the board. Each player's moves are displayed with their respective marks ('X' in red and 'O' in green). Empty cells are represented by `'.'`.
+  
+- **Validation**: The `isValidMove` function checks if a move is valid by ensuring the selected cell is within bounds and not already occupied.
+  
+- **Gameplay Mechanics**: Players alternate turns, with 'X' starting the game. The `makeMove` function allows each player to place their mark on an empty cell on the board.
+  
+- **Winning Condition**: The `hasWon` function checks if either player has formed a winning line horizontally, vertically, or diagonally.
+  
+- **End Game Conditions**: The game ends when a player wins, the board is full resulting in a draw, or when a player makes an invalid move.
+
+
+
